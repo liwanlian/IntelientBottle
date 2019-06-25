@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IntelientBottle</string>
+    <string name="chakan">查看</string>
+    <string name="dayqxt">日趋线图</string>
+    <string name="monthqxt">月曲线图</string>
+    <string name="yearqxt">年趋线图</string>
+    <string name="control">控制</string>
+    <string name="chakanjie">查看界面</string>
+</resources>

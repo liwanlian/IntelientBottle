@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4682B4"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/qu_first"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/electric_category" />
+
+                        <TextView
+                            android:id="@+id/T_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:text="当天"
+                            android:textColor="@color/color2"
+                            android:textSize="13sp" />
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/customBarChart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/qview1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/qu_first"
+                >
+            </View>
+            <RelativeLayout
+                android:id="@+id/qu_second"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <TextView
+                    android:id="@+id/describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你在当天巴拉巴拉巴里巴"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    />
+            </RelativeLayout>
+            <View
+                android:id="@+id/qview2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/qu_second"
+                ></View>
+            <RelativeLayout
+                android:id="@+id/qu_third"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:baselineAligned="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/color14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="已喝"
+                            android:textColor="@color/color2"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/color15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="标准"
+                            android:textColor="@color/color2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/electric_category" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:text="近四天的情况"
+                            android:textColor="@color/color2"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/customBarChart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:id="@+id/quview3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/qu_third"
+                >
+            </View>
+            <RelativeLayout
+                android:id="@+id/qu_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                >
+                <TextView
+                    android:id="@+id/describe1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你在当天巴拉巴拉巴里巴"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    />
+            </RelativeLayout>
+            <View
+                android:id="@+id/quview4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/qu_third"
+                >
+            </View>
+            <RelativeLayout
+                android:id="@+id/qu_sixth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <TextView
+                    android:id="@+id/describe3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="返回"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:textColor="#7CCD7C"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
