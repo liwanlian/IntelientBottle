@@ -1,0 +1,46 @@
+package com.example.my_simplemvp.View;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import com.example.my_simplemvp.Local_database.DBManager;
+import com.example.my_simplemvp.R;
+
+public class RegesterActivity extends AppCompatActivity {
+    EditText regester_et_name;
+    EditText regester_et_nickname;
+    EditText regester_et_password;
+    EditText regester_et_rpassword;
+    EditText regester_et_telephonenum;
+    EditText regester_et_address;
+    RadioGroup  regester_gender;
+    Button regester_sure;
+    DBManager dbManager;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_regester);
+        dbManager=new DBManager(this);
+        initview();
+    }
+    private void initview(){
+        regester_et_name=(EditText)findViewById(R.id.regester_et_name);
+        regester_et_nickname=(EditText)findViewById(R.id.regester_et_nickname);
+        regester_et_password=(EditText)findViewById(R.id.regester_et_password);
+        regester_et_rpassword=(EditText)findViewById(R.id.regester_et_rpassword);
+        regester_et_telephonenum=(EditText)findViewById(R.id.regester_et_telephonenum);
+        regester_gender=(RadioGroup)findViewById(R.id.regester_gender);
+        regester_sure=(Button)findViewById(R.id.regester_sure);
+        regester_et_address=(EditText)findViewById(R.id.regester_et_address);
+    }
+    private void controlfunction(){
+        final String name=regester_et_name.getText().toString().trim();//姓名
+        final String nickname=regester_et_nickname.getText().toString().trim();//昵称
+        final String telephonenum =regester_et_telephonenum.getText().toString().trim();//手机号
+        final String passwprd=regester_et_password.getText().toString().trim();/
